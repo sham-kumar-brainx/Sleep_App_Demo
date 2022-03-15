@@ -34,4 +34,20 @@ extension UIView {
         layer.shadowOpacity = alpha
         layer.shadowRadius = radius
     }
+    
+    @discardableResult
+    func addGradient(_ direction: GradientDirection, withColor colors: [UIColor], cornerRadius: CGFloat = 0, shouldPushInBackground: Bool = true) -> CAGradientLayer {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = colors.map { $0.cgColor }
+        gradientLayer.startPoint = direction.start
+        gradientLayer.endPoint = direction.end
+        gradientLayer.frame = bounds
+        gradientLayer.cornerRadius = cornerRadius
+        if shouldPushInBackground {
+            layer.insertSublayer(gradientLayer, at: 0)
+        } else {
+            layer.addSublayer(gradientLayer)
+        }
+        return gradientLayer
+    }
 }

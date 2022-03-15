@@ -1,24 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wm4-4X-C2k">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Home View Controller-->
+        <scene sceneID="0Ug-Ts-7ZN">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="HomeViewController" id="wm4-4X-C2k" customClass="HomeViewController" customModule="Sleep_App_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ggq-vl-2PY" userLabel="Home View " customClass="HomeView" customModule="Sleep_App_Demo" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rec-ZC-pVm" userLabel="Home Content View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wP9-i7-XMg">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="299"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="299" id="kH5-oY-xC3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wP9-i7-XMg" firstAttribute="leading" secondItem="rec-ZC-pVm" secondAttribute="leading" id="Mta-LG-QFG"/>
+                                    <constraint firstItem="wP9-i7-XMg" firstAttribute="top" secondItem="rec-ZC-pVm" secondAttribute="top" id="aPO-X3-5ac"/>
+                                    <constraint firstAttribute="trailing" secondItem="wP9-i7-XMg" secondAttribute="trailing" id="cGR-se-WQT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qHf-RA-IDf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rec-ZC-pVm" firstAttribute="leading" secondItem="qHf-RA-IDf" secondAttribute="leading" id="WK2-mz-4hK"/>
+                            <constraint firstItem="qHf-RA-IDf" firstAttribute="trailing" secondItem="rec-ZC-pVm" secondAttribute="trailing" id="iwI-T1-B11"/>
+                            <constraint firstItem="qHf-RA-IDf" firstAttribute="bottom" secondItem="rec-ZC-pVm" secondAttribute="bottom" id="rLs-Kj-S7h"/>
+                            <constraint firstItem="rec-ZC-pVm" firstAttribute="top" secondItem="qHf-RA-IDf" secondAttribute="top" id="t3u-qj-QtF"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="topView" destination="wP9-i7-XMg" id="qRU-UU-gUB"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="homeView" destination="rec-ZC-pVm" id="sud-bD-JHg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjB-W5-3HK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-121" y="24"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
