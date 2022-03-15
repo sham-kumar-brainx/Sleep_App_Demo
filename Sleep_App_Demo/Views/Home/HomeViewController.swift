@@ -6,17 +6,6 @@ enum Section: Int, CaseIterable {
     case weekDays
     case sleepCategories
     case sleepCategories1
-    
-    var rowCount: Int {
-        switch self {
-        case .weekDays:
-            return 1
-        case .sleepCategories:
-            return 1
-        case .sleepCategories1:
-            return 1
-        }
-    }
 }
 
 class HomeViewController: BaseViewController {
@@ -41,7 +30,6 @@ class HomeViewController: BaseViewController {
     private func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
             guard let sectionLayoutKind = Section(rawValue: sectionIndex) else { return nil }
-            let row = sectionLayoutKind.rowCount
             var groupWidth: CGFloat = 0.0
             var groupHeight: CGFloat = 0.0
             var interGroupSpacing: CGFloat = 30.0
@@ -57,7 +45,7 @@ class HomeViewController: BaseViewController {
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),  heightDimension: .fractionalHeight(1.0))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(groupWidth), heightDimension: .absolute(groupHeight))
-            let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: row)
+            let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 1)
             let section = NSCollectionLayoutSection(group: group)
             section.contentInsets = NSDirectionalEdgeInsets(top: 16.0, leading: 32.0, bottom: 16.0, trailing: 32.0)
             section.orthogonalScrollingBehavior = .groupPaging
@@ -102,10 +90,12 @@ extension HomeViewController: UICollectionViewDataSource {
             return cell
         case .sleepCategories:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SleepCategoryCell.reuseIdentifierForCollection, for: indexPath) as! SleepCategoryCell
+            cell.setAdherence(70, color: .green, forType: .circular)
 //            cell.setCellData(with: verticalItemListData[indexPath.row])
             return cell
         case .sleepCategories1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SleepCategoryCell.reuseIdentifierForCollection, for: indexPath) as! SleepCategoryCell
+            cell.setAdherence(70, color: .green, forType: .circular)
             return cell
         case .none:
             fatalError("Should not be none")

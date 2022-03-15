@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3c-1F-8lm">
-                        <rect key="frame" x="47" y="41.5" width="15" height="21"/>
+                        <rect key="frame" x="47" y="46.5" width="15" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="HCb-pH-vYo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="LjU-AO-DAt"/>
-                <constraint firstItem="HCb-pH-vYo" firstAttribute="top" secondItem="y3c-1F-8lm" secondAttribute="bottom" constant="5" id="Mh1-D1-Jdl"/>
+                <constraint firstItem="HCb-pH-vYo" firstAttribute="top" secondItem="y3c-1F-8lm" secondAttribute="bottom" id="Mh1-D1-Jdl"/>
                 <constraint firstItem="y3c-1F-8lm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="cr8-Mm-aaG"/>
                 <constraint firstAttribute="bottom" secondItem="HCb-pH-vYo" secondAttribute="bottom" constant="15" id="jXN-7V-oVS"/>
             </constraints>
