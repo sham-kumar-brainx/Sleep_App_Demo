@@ -14,6 +14,11 @@ extension UIView {
     }
     
     // MARK: - Internal Methods
+    func setBorderColor(_ color: UIColor, andWidth width: CGFloat = 1.0){
+        layer.borderColor = color.cgColor
+        layer.borderWidth = width
+    }
+    
     func setCornerRadius(_ r : CGFloat, andClipContent clip: Bool = false) {
         layer.cornerRadius = r
         layer.masksToBounds = clip
