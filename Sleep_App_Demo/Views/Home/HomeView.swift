@@ -4,12 +4,14 @@ class HomeView: UIView {
     
     // MARK: - Outlets
     @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var sideMenuButton: UIButton!
     @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var availabilityStatusLabel: UILabel!
     @IBOutlet weak var greetingToUserLabel: UILabel!
     @IBOutlet weak var greetingTimeOfDayLabel: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: Life Cycle Methods
     override func awakeFromNib() {
@@ -27,7 +29,8 @@ class HomeView: UIView {
         greetingTimeOfDayLabel.font = UIFont.setFontProximaNovaRegular(ofSize: 10)
         profileImage.setCornerRadius(53, andClipContent: true)
         profileImage.setBorderColor(Color.lightBlueTypeColor, andWidth: 5)
-        
+        bottomView.setCornerRadius(20, forCorners: [.layerMinXMinYCorner, .layerMaxXMinYCorner], andClipContent: true)
+        bottomView.backgroundColor = Color.lightBrownTypeColor
     }
     
     // MARK: Internal Methods

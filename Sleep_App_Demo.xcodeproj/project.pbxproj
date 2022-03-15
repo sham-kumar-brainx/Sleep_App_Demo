@@ -34,6 +34,12 @@
 		D99D30CA27E0593A0023C90E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30C927E0593A0023C90E /* BaseViewController.swift */; };
 		D99D30D027E05AE70023C90E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30CF27E05AE70023C90E /* HomeView.swift */; };
 		D99D30D227E05CB20023C90E /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30D127E05CB20023C90E /* GradientDirection.swift */; };
+		D99D312B27E086810023C90E /* CollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99D311B27E086810023C90E /* CollectionViewHeader.xib */; };
+		D99D312C27E086810023C90E /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D311C27E086810023C90E /* CollectionViewHeader.swift */; };
+		D99D312D27E086810023C90E /* SleepCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D311D27E086810023C90E /* SleepCategoryCell.swift */; };
+		D99D312E27E086810023C90E /* WeekDaysCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99D311E27E086810023C90E /* WeekDaysCell.xib */; };
+		D99D313027E086810023C90E /* SleepCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99D312027E086810023C90E /* SleepCategoryCell.xib */; };
+		D99D313327E086810023C90E /* WeekDaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D312327E086810023C90E /* WeekDaysCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +91,12 @@
 		D99D30C927E0593A0023C90E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D99D30CF27E05AE70023C90E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D99D30D127E05CB20023C90E /* GradientDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDirection.swift; sourceTree = "<group>"; };
+		D99D311B27E086810023C90E /* CollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewHeader.xib; sourceTree = "<group>"; };
+		D99D311C27E086810023C90E /* CollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		D99D311D27E086810023C90E /* SleepCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepCategoryCell.swift; sourceTree = "<group>"; };
+		D99D311E27E086810023C90E /* WeekDaysCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekDaysCell.xib; sourceTree = "<group>"; };
+		D99D312027E086810023C90E /* SleepCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SleepCategoryCell.xib; sourceTree = "<group>"; };
+		D99D312327E086810023C90E /* WeekDaysCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDaysCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +147,7 @@
 		D9603AB027DF1573006D4840 /* Sleep_App_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D99D311127E086810023C90E /* Components */,
 				D99D30B927E0548B0023C90E /* Globals */,
 				D99D30A827E054640023C90E /* Extentions */,
 				D99D309A27E054320023C90E /* Fonts */,
@@ -253,6 +266,27 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		D99D311127E086810023C90E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D99D311927E086810023C90E /* Home_CollectionView_Component */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D99D311927E086810023C90E /* Home_CollectionView_Component */ = {
+			isa = PBXGroup;
+			children = (
+				D99D311C27E086810023C90E /* CollectionViewHeader.swift */,
+				D99D311B27E086810023C90E /* CollectionViewHeader.xib */,
+				D99D312327E086810023C90E /* WeekDaysCell.swift */,
+				D99D311E27E086810023C90E /* WeekDaysCell.xib */,
+				D99D311D27E086810023C90E /* SleepCategoryCell.swift */,
+				D99D312027E086810023C90E /* SleepCategoryCell.xib */,
+			);
+			path = Home_CollectionView_Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -362,6 +396,9 @@
 				D9603ABB27DF1574006D4840 /* Assets.xcassets in Resources */,
 				D99D30C627E057FB0023C90E /* FontsFree-Net-Proxima-Nova-Bold.otf in Resources */,
 				D9603AB927DF1573006D4840 /* Main.storyboard in Resources */,
+				D99D313027E086810023C90E /* SleepCategoryCell.xib in Resources */,
+				D99D312E27E086810023C90E /* WeekDaysCell.xib in Resources */,
+				D99D312B27E086810023C90E /* CollectionViewHeader.xib in Resources */,
 				D99D30C727E057FE0023C90E /* FontsFree-Net-ProximaNova-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,9 +430,11 @@
 				D99D30C127E0548B0023C90E /* LocalizedKey.swift in Sources */,
 				D99D30B727E054640023C90E /* UICollectionViewCell.swift in Sources */,
 				D99D30D027E05AE70023C90E /* HomeView.swift in Sources */,
+				D99D313327E086810023C90E /* WeekDaysCell.swift in Sources */,
 				D9603AB627DF1573006D4840 /* HomeViewController.swift in Sources */,
 				D99D30B427E054640023C90E /* UICollectionView.swift in Sources */,
 				D99D30C227E0548B0023C90E /* Images.swift in Sources */,
+				D99D312D27E086810023C90E /* SleepCategoryCell.swift in Sources */,
 				D99D30D227E05CB20023C90E /* GradientDirection.swift in Sources */,
 				D99D30C327E0548B0023C90E /* Colors.swift in Sources */,
 				D99D30B627E054640023C90E /* UICollectionReusableView.swift in Sources */,
@@ -404,6 +443,7 @@
 				D9603AB427DF1573006D4840 /* SceneDelegate.swift in Sources */,
 				D99D30CA27E0593A0023C90E /* BaseViewController.swift in Sources */,
 				D99D30B327E054640023C90E /* UIFonts.swift in Sources */,
+				D99D312C27E086810023C90E /* CollectionViewHeader.swift in Sources */,
 				D99D30B227E054640023C90E /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
