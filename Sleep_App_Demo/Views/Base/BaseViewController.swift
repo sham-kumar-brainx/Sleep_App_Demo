@@ -5,7 +5,7 @@ class BaseViewController: UIViewController {
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        disableDarkMode()
+//        disableDarkMode()
     }
     
     // MARK: - Private Methods

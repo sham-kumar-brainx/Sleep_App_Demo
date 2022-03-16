@@ -46,10 +46,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3B-PH-ZKg" userLabel="Linear Progress View" customClass="ProgressBarView" customModule="Sleep_App_Demo" customModuleProvider="target">
-                        <rect key="frame" x="24" y="227" width="216" height="9"/>
+                        <rect key="frame" x="24" y="227" width="216" height="10"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="9" id="PfX-4Z-3h6"/>
+                            <constraint firstAttribute="height" constant="10" id="PfX-4Z-3h6"/>
                         </constraints>
                     </view>
                 </subviews>

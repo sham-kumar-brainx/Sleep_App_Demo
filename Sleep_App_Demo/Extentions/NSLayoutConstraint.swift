@@ -1,15 +1,9 @@
 //
-//  NSLayoutConstraint.swift
-//  Tespo Health
-//
-//  Created by BrainX Technologies on 21/06/2020.
-//  Copyright © 2020 BrainX Technologies. All rights reserved.
-//
-
 import UIKit
 
 extension NSLayoutConstraint {
     
+    // MARK: - Internal Methods
     func changeMultiplier(multiplier: CGFloat) -> NSLayoutConstraint {
         let newConstraint = NSLayoutConstraint(
             item: firstItem as Any,
@@ -18,12 +12,10 @@ extension NSLayoutConstraint {
             toItem: secondItem,
             attribute: secondAttribute,
             multiplier: multiplier,
-            constant: constant)
-        
+            constant: constant
+        )
         isActive = false
         newConstraint.priority = priority
-        
         return newConstraint
     }
-    
 }

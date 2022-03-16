@@ -3,12 +3,12 @@ import UIKit
 
 enum GradientDirection {
     
-    // MARK: Enum cases
+    // MARK: - Enum cases
     case vertical
     case horizontal
     case diagonal
     
-    // MARK: Internal Properties
+    // MARK: - Internal Properties
     var start: CGPoint {
         return CGPoint(x: 0, y: 0)
     }
