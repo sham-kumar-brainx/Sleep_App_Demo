@@ -62,7 +62,7 @@ class HomeViewController: BaseViewController {
 }
 
 // MARK: - Extention for confroming UICollectionViewDataSource
-extension HomeViewController: UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
     // MARK: - Internal Methods
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -72,7 +72,7 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch Section(rawValue: section) {
         case .weekDays:
-            return 7
+            return HomeScreenViewModel.shared.weekDays.count
         case .sleepCategories:
             return 3
         case .sleepCategories1:
@@ -86,12 +86,12 @@ extension HomeViewController: UICollectionViewDataSource {
         switch Section(rawValue: indexPath.section) {
         case .weekDays:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WeekDaysCell.reuseIdentifierForCollection, for: indexPath as IndexPath) as! WeekDaysCell
-//            cell.setCellData(with: horizentalItemListData[indexPath.row])
+            cell.setCellData(with: HomeScreenViewModel.shared.weekDays[indexPath.row])
             return cell
         case .sleepCategories:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SleepCategoryCell.reuseIdentifierForCollection, for: indexPath) as! SleepCategoryCell
             cell.setAdherence(70, color: .green, forType: .circular)
-//            cell.setCellData(with: verticalItemListData[indexPath.row])
+            //            cell.setCellData(with: verticalItemListData[indexPath.row])
             return cell
         case .sleepCategories1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SleepCategoryCell.reuseIdentifierForCollection, for: indexPath) as! SleepCategoryCell
@@ -106,6 +106,54 @@ extension HomeViewController: UICollectionViewDataSource {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: CollectionViewHeader.reuseIdentifierForHeaderAndFooter, for: indexPath) as! CollectionViewHeader
         return headerView
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        print(indexPath.section)
+//        if indexPath.section == 0 {
+//            let cell = collectionView.cellForItem(at: indexPath) as! WeekDaysCell
+//            cell.isSelected = true
+//            collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
+//            //                cell.didSelect(indexPath: indexPath as NSIndexPath)
+//        } else if indexPath.section == 1 {
+//            return
+//        }else {
+//            return
+//        }
+//    }
+    
+//    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+//        if indexPath.section == 0 {
+//            let cell = collectionView.cellForItem(at: indexPath) as! WeekDaysCell
+//            cell.isSelected = true
+//            //            collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
+//            //                cell.didSelect(indexPath: indexPath as NSIndexPath)
+//        } else if indexPath.section == 1 {
+//            return
+//        }else {
+//            return
+//        }
+//    }
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath)
+    {
+        if indexPath.section == 0 {
+            if collectionView.indexPathsForSelectedItems?.first == nil && indexPath.row == 0
+            {
+                cell.isSelected = true
+                collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
+            }
+        } else if indexPath.section == 1 {
+            return
+        }else {
+            return
+        }
+//        //Select 1st cell when the collection view is first loaded
+//        if collectionView.indexPathsForSelectedItems?.first == nil && indexPath.row == 0
+//        {
+//            cell.isSelected = true
+//            collectionView.selectItem(at: indexPath, animated: false, scrollPosition: UICollectionView.ScrollPosition(rawValue: 0))
+//        }
+    }
+    
 }
 
 

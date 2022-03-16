@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D902117827E1A9E5000E418D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902117727E1A9E5000E418D /* Date.swift */; };
+		D902117A27E1AD0E000E418D /* WeekDaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902117927E1AD0E000E418D /* WeekDaysModel.swift */; };
+		D902117E27E1ADF5000E418D /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902117D27E1ADF5000E418D /* HomeScreenViewModel.swift */; };
 		D9603AB227DF1573006D4840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9603AB127DF1573006D4840 /* AppDelegate.swift */; };
 		D9603AB427DF1573006D4840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9603AB327DF1573006D4840 /* SceneDelegate.swift */; };
 		D9603AB627DF1573006D4840 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9603AB527DF1573006D4840 /* HomeViewController.swift */; };
@@ -24,7 +27,6 @@
 		D99D30B627E054640023C90E /* UICollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30AE27E054640023C90E /* UICollectionReusableView.swift */; };
 		D99D30B727E054640023C90E /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30AF27E054640023C90E /* UICollectionViewCell.swift */; };
 		D99D30B827E054640023C90E /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30B027E054640023C90E /* UIStoryboard.swift */; };
-		D99D30BF27E0548B0023C90E /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30BA27E0548B0023C90E /* Helpers.swift */; };
 		D99D30C127E0548B0023C90E /* LocalizedKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30BC27E0548B0023C90E /* LocalizedKey.swift */; };
 		D99D30C227E0548B0023C90E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30BD27E0548B0023C90E /* Images.swift */; };
 		D99D30C327E0548B0023C90E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30BE27E0548B0023C90E /* Colors.swift */; };
@@ -64,6 +66,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D902117727E1A9E5000E418D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		D902117927E1AD0E000E418D /* WeekDaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysModel.swift; sourceTree = "<group>"; };
+		D902117D27E1ADF5000E418D /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		D9603AAE27DF1573006D4840 /* Sleep_App_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleep_App_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9603AB127DF1573006D4840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9603AB327DF1573006D4840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,7 +93,6 @@
 		D99D30AE27E054640023C90E /* UICollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionReusableView.swift; sourceTree = "<group>"; };
 		D99D30AF27E054640023C90E /* UICollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		D99D30B027E054640023C90E /* UIStoryboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
-		D99D30BA27E0548B0023C90E /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		D99D30BC27E0548B0023C90E /* LocalizedKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
 		D99D30BD27E0548B0023C90E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D99D30BE27E0548B0023C90E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -132,6 +136,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D902117B27E1AD65000E418D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D902117927E1AD0E000E418D /* WeekDaysModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D902117C27E1ADDC000E418D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D902117D27E1ADF5000E418D /* HomeScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D9603AA527DF1573006D4840 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +175,8 @@
 		D9603AB027DF1573006D4840 /* Sleep_App_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D902117C27E1ADDC000E418D /* ViewModels */,
+				D902117B27E1AD65000E418D /* Models */,
 				D99D311127E086810023C90E /* Components */,
 				D99D30B927E0548B0023C90E /* Globals */,
 				D99D30A827E054640023C90E /* Extentions */,
@@ -242,6 +264,7 @@
 				D99D30AE27E054640023C90E /* UICollectionReusableView.swift */,
 				D99D30AF27E054640023C90E /* UICollectionViewCell.swift */,
 				D99D30B027E054640023C90E /* UIStoryboard.swift */,
+				D902117727E1A9E5000E418D /* Date.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -250,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				D99D30D127E05CB20023C90E /* GradientDirection.swift */,
-				D99D30BA27E0548B0023C90E /* Helpers.swift */,
 				D99D30BC27E0548B0023C90E /* LocalizedKey.swift */,
 				D99D30BD27E0548B0023C90E /* Images.swift */,
 				D99D30BE27E0548B0023C90E /* Colors.swift */,
@@ -459,8 +481,10 @@
 				D99D30C127E0548B0023C90E /* LocalizedKey.swift in Sources */,
 				D99D30B727E054640023C90E /* UICollectionViewCell.swift in Sources */,
 				D99D30D027E05AE70023C90E /* HomeView.swift in Sources */,
+				D902117827E1A9E5000E418D /* Date.swift in Sources */,
 				D99D313327E086810023C90E /* WeekDaysCell.swift in Sources */,
 				D99D313D27E0D1B80023C90E /* NSLayoutConstraint.swift in Sources */,
+				D902117E27E1ADF5000E418D /* HomeScreenViewModel.swift in Sources */,
 				D9603AB627DF1573006D4840 /* HomeViewController.swift in Sources */,
 				D99D313627E0B8B10023C90E /* CircularProgressBarView.swift in Sources */,
 				D99D313A27E0D12A0023C90E /* ProgressBarView.swift in Sources */,
@@ -470,11 +494,11 @@
 				D99D30D227E05CB20023C90E /* GradientDirection.swift in Sources */,
 				D99D30C327E0548B0023C90E /* Colors.swift in Sources */,
 				D99D30B627E054640023C90E /* UICollectionReusableView.swift in Sources */,
-				D99D30BF27E0548B0023C90E /* Helpers.swift in Sources */,
 				D9603AB227DF1573006D4840 /* AppDelegate.swift in Sources */,
 				D9603AB427DF1573006D4840 /* SceneDelegate.swift in Sources */,
 				D99D30CA27E0593A0023C90E /* BaseViewController.swift in Sources */,
 				D99D30B327E054640023C90E /* UIFonts.swift in Sources */,
+				D902117A27E1AD0E000E418D /* WeekDaysModel.swift in Sources */,
 				D99D312C27E086810023C90E /* CollectionViewHeader.swift in Sources */,
 				D99D30B227E054640023C90E /* UIColor.swift in Sources */,
 			);

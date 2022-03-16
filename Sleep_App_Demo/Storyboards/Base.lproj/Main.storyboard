@@ -113,6 +113,7 @@
                                                 </cells>
                                                 <connections>
                                                     <outlet property="dataSource" destination="wm4-4X-C2k" id="sKg-Zs-lWL"/>
+                                                    <outlet property="delegate" destination="wm4-4X-C2k" id="cse-PX-l1g"/>
                                                 </connections>
                                             </collectionView>
                                         </subviews>
