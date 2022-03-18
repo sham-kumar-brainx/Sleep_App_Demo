@@ -4,7 +4,7 @@ class CircularProgressBarView: UIView {
     
     
     // MARK: - Private Properties
-    private var barWidth: CGFloat = 9.0
+    private var barWidth: CGFloat = 0
     private var barStyle: CAShapeLayerLineCap = .square
     private var progress: CGFloat = 0
     private var startAngle: CGFloat = -.pi / 2.0
@@ -15,7 +15,7 @@ class CircularProgressBarView: UIView {
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
         super.awakeFromNib()
-        configureViewsOnLoad()
+//        configureViewsOnLoad()
     }
     
     // MARK: - Private Methods
@@ -41,8 +41,10 @@ class CircularProgressBarView: UIView {
     }
     
     // MARK: - Internal Methods
-    func updateCircularProgressBarWith(totalHoursSlept: Float, totalHourToSleep: Float, color: UIColor) {
+    func updateCircularProgressBarWith(totalHoursSlept: Float, totalHourToSleep: Float, color: UIColor, width: CGFloat = 9.0) {
         progress = CGFloat(totalHoursSlept / totalHourToSleep)
+        barWidth = width
+        configureViewsOnLoad()
         progressLayer?.removeFromSuperlayer()
         progressLayer = CAShapeLayer()
         let angleRange = endAngle - startAngle

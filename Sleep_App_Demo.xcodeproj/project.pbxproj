@@ -10,6 +10,8 @@
 		D902117A27E1AD0E000E418D /* WeekDaysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902117927E1AD0E000E418D /* WeekDaysModel.swift */; };
 		D902117E27E1ADF5000E418D /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902117D27E1ADF5000E418D /* HomeScreenViewModel.swift */; };
 		D902118027E1D758000E418D /* SleepCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902117F27E1D758000E418D /* SleepCategoryModel.swift */; };
+		D902118327E20C44000E418D /* SleepScreen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902118227E20C43000E418D /* SleepScreen2ViewController.swift */; };
+		D902118527E20C67000E418D /* SleepScreen2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902118427E20C67000E418D /* SleepScreen2View.swift */; };
 		D9603AB227DF1573006D4840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9603AB127DF1573006D4840 /* AppDelegate.swift */; };
 		D9603AB427DF1573006D4840 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9603AB327DF1573006D4840 /* SceneDelegate.swift */; };
 		D9603AB627DF1573006D4840 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9603AB527DF1573006D4840 /* HomeViewController.swift */; };
@@ -69,6 +71,8 @@
 		D902117927E1AD0E000E418D /* WeekDaysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekDaysModel.swift; sourceTree = "<group>"; };
 		D902117D27E1ADF5000E418D /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		D902117F27E1D758000E418D /* SleepCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCategoryModel.swift; sourceTree = "<group>"; };
+		D902118227E20C43000E418D /* SleepScreen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepScreen2ViewController.swift; sourceTree = "<group>"; };
+		D902118427E20C67000E418D /* SleepScreen2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepScreen2View.swift; sourceTree = "<group>"; };
 		D9603AAE27DF1573006D4840 /* Sleep_App_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sleep_App_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9603AB127DF1573006D4840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9603AB327DF1573006D4840 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,15 @@
 				D902117D27E1ADF5000E418D /* HomeScreenViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D902118127E20C14000E418D /* SleepScreen2 */ = {
+			isa = PBXGroup;
+			children = (
+				D902118227E20C43000E418D /* SleepScreen2ViewController.swift */,
+				D902118427E20C67000E418D /* SleepScreen2View.swift */,
+			);
+			path = SleepScreen2;
 			sourceTree = "<group>";
 		};
 		D9603AA527DF1573006D4840 = {
@@ -237,6 +250,7 @@
 		D9603AE427DF17AF006D4840 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D902118127E20C14000E418D /* SleepScreen2 */,
 				D99D30CB27E0595B0023C90E /* Home */,
 				D99D30C827E0593A0023C90E /* Base */,
 			);
@@ -302,12 +316,12 @@
 			children = (
 				D99D313727E0D12A0023C90E /* ProgressBar */,
 				D99D313427E0B8B10023C90E /* CircularProgressBar */,
-				D99D311927E086810023C90E /* Home_CollectionView_Component */,
+				D99D311927E086810023C90E /* HomeCollectionViewComponent */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		D99D311927E086810023C90E /* Home_CollectionView_Component */ = {
+		D99D311927E086810023C90E /* HomeCollectionViewComponent */ = {
 			isa = PBXGroup;
 			children = (
 				D99D311C27E086810023C90E /* CollectionViewHeader.swift */,
@@ -317,7 +331,7 @@
 				D99D311D27E086810023C90E /* SleepCategoryCell.swift */,
 				D99D312027E086810023C90E /* SleepCategoryCell.xib */,
 			);
-			path = Home_CollectionView_Component;
+			path = HomeCollectionViewComponent;
 			sourceTree = "<group>";
 		};
 		D99D313427E0B8B10023C90E /* CircularProgressBar */ = {
@@ -478,6 +492,7 @@
 				D99D30B827E054640023C90E /* UIStoryboard.swift in Sources */,
 				D99D30B127E054640023C90E /* UIView.swift in Sources */,
 				D902118027E1D758000E418D /* SleepCategoryModel.swift in Sources */,
+				D902118327E20C44000E418D /* SleepScreen2ViewController.swift in Sources */,
 				D99D30B527E054640023C90E /* UITableViewCell.swift in Sources */,
 				D99D30C127E0548B0023C90E /* LocalizedKey.swift in Sources */,
 				D99D30B727E054640023C90E /* UICollectionViewCell.swift in Sources */,
@@ -485,6 +500,7 @@
 				D99D313327E086810023C90E /* WeekDaysCell.swift in Sources */,
 				D99D313D27E0D1B80023C90E /* NSLayoutConstraint.swift in Sources */,
 				D902117E27E1ADF5000E418D /* HomeScreenViewModel.swift in Sources */,
+				D902118527E20C67000E418D /* SleepScreen2View.swift in Sources */,
 				D9603AB627DF1573006D4840 /* HomeViewController.swift in Sources */,
 				D99D313627E0B8B10023C90E /* CircularProgressBarView.swift in Sources */,
 				D99D313A27E0D12A0023C90E /* ProgressBarView.swift in Sources */,
