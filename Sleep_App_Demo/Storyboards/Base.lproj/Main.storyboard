@@ -362,7 +362,7 @@
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJc-Qm-kOH" customClass="CircularProgressBarView" customModule="Sleep_App_Demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
-                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="17" id="OCE-G2-km7"/>
                                                                                     <constraint firstAttribute="height" constant="17" id="gCa-DP-d67"/>
@@ -386,7 +386,7 @@
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SoR-sR-war" customClass="CircularProgressBarView" customModule="Sleep_App_Demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
-                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="17" id="QSo-XG-CnW"/>
                                                                                     <constraint firstAttribute="height" constant="17" id="hhX-Av-LcS"/>
@@ -410,7 +410,7 @@
                                                                         <subviews>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Z4-U0-cKC" customClass="CircularProgressBarView" customModule="Sleep_App_Demo" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
-                                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="height" constant="17" id="BQA-XO-aBa"/>
                                                                                     <constraint firstAttribute="width" constant="17" id="Kbr-C5-ntm"/>
@@ -431,13 +431,23 @@
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-49-aib" userLabel="Chart View" customClass="LineChartView" customModule="Charts">
+                                                                <rect key="frame" x="0.0" y="104" width="366" height="190"/>
+                                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="190" id="9Ib-jD-aYs"/>
+                                                                </constraints>
+                                                            </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="VpS-49-aib" secondAttribute="trailing" id="4J5-bf-dp9"/>
                                                             <constraint firstItem="Zde-cA-VDw" firstAttribute="top" secondItem="OrC-c1-ksL" secondAttribute="top" constant="37" id="9bb-wz-rBx"/>
+                                                            <constraint firstItem="VpS-49-aib" firstAttribute="leading" secondItem="OrC-c1-ksL" secondAttribute="leading" id="BKp-xi-wID"/>
                                                             <constraint firstAttribute="trailing" secondItem="Zde-cA-VDw" secondAttribute="trailing" constant="25" id="EeR-we-iGs"/>
                                                             <constraint firstAttribute="height" constant="294" id="gKE-Sb-Wr0"/>
                                                             <constraint firstItem="Zde-cA-VDw" firstAttribute="leading" secondItem="OrC-c1-ksL" secondAttribute="leading" constant="25" id="xM5-eL-S0r"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VpS-49-aib" secondAttribute="bottom" id="yfg-vF-KTy"/>
                                                         </constraints>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="JpC-Gc-80F">
@@ -563,6 +573,7 @@
                         <connections>
                             <outlet property="awakeGraphProgressView" destination="ZJc-Qm-kOH" id="bq7-Qn-2Br"/>
                             <outlet property="calendarButton" destination="unY-h4-qdl" id="T2a-o3-ElM"/>
+                            <outlet property="chartView" destination="VpS-49-aib" id="qkl-7o-1pH"/>
                             <outlet property="dayName" destination="iEh-08-V2u" id="rcU-VA-PdT"/>
                             <outlet property="deepSleepProgressView" destination="9Z4-U0-cKC" id="2bJ-8T-GI9"/>
                             <outlet property="graphContentView" destination="OrC-c1-ksL" id="aan-dr-BQR"/>
@@ -599,6 +610,9 @@
         <image name="photo_of_laughing_woman" width="397" height="595.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

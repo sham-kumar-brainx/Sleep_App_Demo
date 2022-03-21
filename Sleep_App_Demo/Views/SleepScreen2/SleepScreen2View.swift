@@ -1,4 +1,4 @@
-import Foundation
+import Charts
 import UIKit
 
 class SleepScreen2View: UIView {
@@ -23,11 +23,13 @@ class SleepScreen2View: UIView {
     @IBOutlet weak var awakeGraphProgressView: CircularProgressBarView!
     @IBOutlet weak var sleepGraphProgressView: CircularProgressBarView!
     @IBOutlet weak var deepSleepProgressView: CircularProgressBarView!
+    @IBOutlet weak var chartView: LineChartView!
     
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
         super.awakeFromNib()
         configureOnLoad()
+        setChartView()
     }
     
     // MARK: - Private Methods
@@ -49,6 +51,36 @@ class SleepScreen2View: UIView {
         sleepStatusView2.setCornerRadius(26, andClipContent: true)
         graphContentView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
         graphContentView.setCornerRadius(26, andClipContent: true)
+    }
+    
+    private func setChartView() {
+        
+        // Hightlight
+        chartView.highlightPerTapEnabled = true
+        chartView.highlightPerDragEnabled = false
+        
+        // disable zoom function
+        chartView.pinchZoomEnabled = false
+        chartView.setScaleEnabled(false)
+        chartView.doubleTapToZoomEnabled = false
+        chartView.rightAxis.enabled = false
+        chartView.leftAxis.enabled = false
+        chartView.xAxis.drawLabelsEnabled = false
+        chartView.xAxis.drawGridLinesEnabled = false
+        chartView.xAxis.drawAxisLineEnabled = false
+        chartView.legend.enabled = false
+        chartView.chartDescription.enabled = false
+        chartView.dragEnabled = true
+        chartView.setViewPortOffsets(left: 0, top: 0, right: 0, bottom: 0)
+        
+        let marker = BalloonMarker(color: .white,
+                                   font: UIFont.setFontProximaNovaBold(ofSize: 9) ?? .systemFont(ofSize: 12),
+                                   textColor: .black,
+                                   insets: UIEdgeInsets(top: 8, left: 15, bottom: 8, right: 15))
+        marker.chartView = chartView
+        marker.chartView?.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
+        marker.minimumSize = CGSize(width: 65, height: 40)
+        chartView.marker = marker
     }
     
     // Mark: - Internal Methods
