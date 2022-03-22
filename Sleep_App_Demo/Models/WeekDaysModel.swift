@@ -6,4 +6,3 @@ struct WeekDaysModel: Hashable {
     let dayOfMonth: Int
     let dayOfWeekInShortForm: String
 }
-

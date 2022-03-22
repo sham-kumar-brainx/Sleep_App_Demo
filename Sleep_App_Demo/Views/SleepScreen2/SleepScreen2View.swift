@@ -34,15 +34,15 @@ class SleepScreen2View: UIView {
     
     // MARK: - Private Methods
     private func configureOnLoad() {
-        self.backgroundColor = Color.lightBrownTypeColor
-        progressView1.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        progressView2.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        progressView3.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        progressView4.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        awakeGraphProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        sleepGraphProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        deepSleepProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
-        sleepQualityProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
+        self.backgroundColor = Color.backgroundViewColor
+        progressView1.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        progressView2.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        progressView3.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        progressView4.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        awakeGraphProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        sleepGraphProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        deepSleepProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
+        sleepQualityProgressView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 1, radius: 1)
         sleepQualityView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
         sleepQualityView.setCornerRadius(26, andClipContent: true)
         sleepStatusView1.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
@@ -51,15 +51,15 @@ class SleepScreen2View: UIView {
         sleepStatusView2.setCornerRadius(26, andClipContent: true)
         graphContentView.addShadow(color: Color.lightBrownColor, alpha: 0.4, x: 0, y: 3, radius: 5)
         graphContentView.setCornerRadius(26, andClipContent: true)
+        sleepQualityView.backgroundColor = Color.collectionItemBackgroundColor
+        graphContentView.backgroundColor = Color.collectionItemBackgroundColor
+        sleepStatusView1.backgroundColor = Color.collectionItemBackgroundColor
+        sleepStatusView2.backgroundColor = Color.collectionItemBackgroundColor
     }
     
     private func setChartView() {
-        
-        // Hightlight
         chartView.highlightPerTapEnabled = true
         chartView.highlightPerDragEnabled = false
-        
-        // disable zoom function
         chartView.pinchZoomEnabled = false
         chartView.setScaleEnabled(false)
         chartView.doubleTapToZoomEnabled = false
@@ -72,7 +72,6 @@ class SleepScreen2View: UIView {
         chartView.chartDescription.enabled = false
         chartView.dragEnabled = true
         chartView.setViewPortOffsets(left: 0, top: 0, right: 0, bottom: 0)
-        
         let marker = BalloonMarker(color: .white,
                                    font: UIFont.setFontProximaNovaBold(ofSize: 9) ?? .systemFont(ofSize: 12),
                                    textColor: .black,

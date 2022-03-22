@@ -12,4 +12,21 @@ enum Color {
     static let filledHorizentalProgressBar = UIColor(hex: "#078AD6")
     static let emptyHorizentalProgressBar = UIColor(hex: "#E5E5E5")
     static let shadow = UIColor(red: 83/255, green: 158/255, blue: 255/255, alpha: 0.1)
+    static let backgroundViewColor = UIColor { traitCollection in
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            return UIColor(hex: "#061620")
+        default:
+            return UIColor(hex: "#F2F5F8")
+        }
+    }
+    static let collectionItemBackgroundColor = UIColor { traitCollection in
+        switch traitCollection.userInterfaceStyle {
+        case .dark:
+            return UIColor(hex: "#FFFFFF").withAlphaComponent(0.12)
+        default:
+            return UIColor(hex: "#FFFFFF")
+        }
+    }
 }
+

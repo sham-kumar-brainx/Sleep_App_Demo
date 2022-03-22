@@ -28,6 +28,7 @@ class WeekDaysCell: UICollectionViewCell {
         dayOfWeek.font = UIFont.setFontProximaNovaMedium(ofSize: 12)
         self.setCornerRadius(16)
         self.addShadow(color: Color.lightBrownColor, alpha: 0.50, x: 0, y: 3, radius: 5)
+        self.backgroundColor = Color.collectionItemBackgroundColor
     }
     
     private func didSelect() {

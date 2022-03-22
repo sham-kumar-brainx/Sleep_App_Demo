@@ -15,7 +15,6 @@ class CircularProgressBarView: UIView {
     // MARK: - Lifecycle Methods
     override func awakeFromNib() {
         super.awakeFromNib()
-//        configureViewsOnLoad()
     }
     
     // MARK: - Private Methods
@@ -32,12 +31,16 @@ class CircularProgressBarView: UIView {
             clockwise: true
         )
         barLayer?.path = circularPath.cgPath
-        barLayer?.fillColor = UIColor.white.cgColor
         barLayer?.lineCap = .square
         barLayer?.lineWidth = barWidth
-        barLayer?.strokeColor = UIColor.white.cgColor
+        barLayer?.fillColor = UIColor.clear.cgColor
+        updateColors()
         guard let barLayer = barLayer else  { return }
         layer.addSublayer(barLayer)
+    }
+    
+    private func updateColors(){
+        barLayer?.strokeColor = Color.backgroundViewColor.cgColor
     }
     
     // MARK: - Internal Methods
@@ -66,5 +69,11 @@ class CircularProgressBarView: UIView {
         progressLayer?.strokeColor = color.cgColor
         guard let progressLayer = progressLayer else { return }
         layer.addSublayer(progressLayer)
+    }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        self.updateColors()
+        self.setNeedsDisplay()
     }
 }

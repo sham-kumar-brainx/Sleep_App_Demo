@@ -83,7 +83,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="QU8-WO-tRy" secondAttribute="trailing" constant="20" id="0uQ-8M-AbN"/>
                                             <constraint firstItem="xMO-Wq-yzn" firstAttribute="top" secondItem="wP9-i7-XMg" secondAttribute="top" constant="16" id="26K-Cl-710"/>
@@ -308,13 +307,11 @@
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5h 58 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIk-fD-jzR">
                                                                 <rect key="frame" x="148" y="40" width="208" height="18"/>
                                                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="18"/>
-                                                                <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Bed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVI-yY-rfb">
                                                                 <rect key="frame" x="148" y="63" width="208" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="14"/>
-                                                                <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5h 25 m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLg-YL-hyj">
@@ -330,7 +327,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="sVI-yY-rfb" secondAttribute="trailing" constant="10" id="1Fv-2H-Wef"/>
                                                             <constraint firstItem="ZIk-fD-jzR" firstAttribute="top" secondItem="nlT-im-Bz7" secondAttribute="top" constant="40" id="4h1-ZS-kCC"/>
@@ -439,7 +436,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="VpS-49-aib" secondAttribute="trailing" id="4J5-bf-dp9"/>
                                                             <constraint firstItem="Zde-cA-VDw" firstAttribute="top" secondItem="OrC-c1-ksL" secondAttribute="top" constant="37" id="9bb-wz-rBx"/>
@@ -563,7 +560,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OXN-bD-AXa"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="siA-FS-tmb" firstAttribute="top" secondItem="OXN-bD-AXa" secondAttribute="top" id="Aa2-9Z-fS5"/>
                             <constraint firstItem="siA-FS-tmb" firstAttribute="leading" secondItem="OXN-bD-AXa" secondAttribute="leading" id="JVH-c2-ciO"/>

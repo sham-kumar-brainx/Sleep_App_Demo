@@ -32,7 +32,7 @@ class HomeView: UIView {
         profileImage.setCornerRadius(53, andClipContent: true)
         profileImage.setBorderColor(Color.lightBlueTypeColor, andWidth: 5)
         bottomView.setCornerRadius(20, forCorners: [.layerMinXMinYCorner, .layerMaxXMinYCorner], andClipContent: true)
-        bottomView.backgroundColor = Color.lightBrownTypeColor
+        bottomView.backgroundColor = Color.backgroundViewColor
     }
     
     private func setUpCollectionView() {

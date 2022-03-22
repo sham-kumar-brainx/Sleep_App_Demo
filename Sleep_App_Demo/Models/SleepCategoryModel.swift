@@ -10,4 +10,3 @@ struct SleepCategoryModel: Hashable {
     let totalHoursSlept: Float
     let progressColor: UIColor
 }
-

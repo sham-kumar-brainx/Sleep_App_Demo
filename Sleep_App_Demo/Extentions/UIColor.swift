@@ -1,5 +1,12 @@
 import UIKit
 
+enum AssetsColor : String {
+  case background
+  case title
+  case subTitle
+  case tabBar
+}
+
 extension UIColor {
     
     // MARK: - Intializer Methods
@@ -19,5 +26,9 @@ extension UIColor {
             (a, r, g, b) = (255, 0, 0, 0)
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
+    }
+    
+    static func appColor(_ name: AssetsColor) -> UIColor? {
+        return UIColor(named: name.rawValue)
     }
 }

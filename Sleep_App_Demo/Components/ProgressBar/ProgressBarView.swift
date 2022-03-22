@@ -19,7 +19,6 @@ class ProgressBarView: UIView {
     @IBOutlet weak var progressBarView: UIView!
     @IBOutlet weak var progressWidthCnst: NSLayoutConstraint!
     
-    
     // MARK: - Initializer Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,14 +37,14 @@ class ProgressBarView: UIView {
         }
         addSubview(contentView)
         contentView.fixInView(self)
-        contentView.backgroundColor = progressBackgroundColor
+        contentView.backgroundColor = Color.backgroundViewColor
         progressBarView.backgroundColor = progressBarColor
         guard style == .rounded else { return }
         let height = contentView.bounds.height
         progressBarView.setCornerRadius(height / 2)
     }
     
-    // MARK: Internal Methods
+    // MARK: - Internal Methods
     func updateLinearProgressBarWith(totalHoursSlept: Float, totalHourToSleep: Float, color: UIColor) {
         progressBarView.backgroundColor = color
         progress = CGFloat(totalHoursSlept / totalHourToSleep)
