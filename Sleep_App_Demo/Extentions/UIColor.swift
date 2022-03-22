@@ -27,8 +27,20 @@ extension UIColor {
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
-    
+   
+    // MARK: - Static Methods
     static func appColor(_ name: AssetsColor) -> UIColor? {
         return UIColor(named: name.rawValue)
+    }
+    
+    static func getCurrentIterfaceStyleColor(lightColorHex: String, darkColorHex: String) -> UIColor {
+        return UIColor { traitCollection in
+            switch traitCollection.userInterfaceStyle {
+            case .dark:
+                return UIColor(hex: darkColorHex)
+            default:
+                return UIColor(hex: lightColorHex)
+            }
+        }
     }
 }

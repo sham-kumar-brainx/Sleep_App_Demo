@@ -1,7 +1,8 @@
 import Charts
 import Foundation
 
-class SleepScreen2ViewController: BaseViewController, ChartViewDelegate {
+class SleepScreen2ViewController: UIViewController, ChartViewDelegate {
+    
     // MARK: - Outlets
     @IBOutlet var sleepScreen2View: SleepScreen2View!
     
@@ -14,9 +15,9 @@ class SleepScreen2ViewController: BaseViewController, ChartViewDelegate {
         sleepScreen2View.setProgressViews()
         updateGraph()
     }
-   
+    
     // MARK: - Internal Methods
-    func updateGraph(){
+    func updateGraph() {
         sleepScreen2View.chartView.delegate = self
         var lineChartEntry = [ChartDataEntry]()
         for i in 0..<numbers.count {

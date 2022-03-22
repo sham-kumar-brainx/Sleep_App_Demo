@@ -35,11 +35,11 @@ class CircularProgressBarView: UIView {
         barLayer?.lineWidth = barWidth
         barLayer?.fillColor = UIColor.clear.cgColor
         updateColors()
-        guard let barLayer = barLayer else  { return }
+        guard let barLayer = barLayer else { return }
         layer.addSublayer(barLayer)
     }
     
-    private func updateColors(){
+    private func updateColors() {
         barLayer?.strokeColor = Color.backgroundViewColor.cgColor
     }
     
@@ -59,7 +59,7 @@ class CircularProgressBarView: UIView {
             ),
             radius: frame.size.width/2,
             startAngle: startAngle,
-            endAngle:  progressAngle,
+            endAngle: progressAngle,
             clockwise: true
         )
         progressLayer?.path = progressPath.cgPath

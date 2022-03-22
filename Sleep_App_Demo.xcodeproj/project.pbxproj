@@ -36,7 +36,6 @@
 		D99D30C527E057F90023C90E /* FontsFree-Net-pr2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99D30A627E0544E0023C90E /* FontsFree-Net-pr2.ttf */; };
 		D99D30C627E057FB0023C90E /* FontsFree-Net-Proxima-Nova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D99D30A727E0544E0023C90E /* FontsFree-Net-Proxima-Nova-Bold.otf */; };
 		D99D30C727E057FE0023C90E /* FontsFree-Net-ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D99D30A527E0544E0023C90E /* FontsFree-Net-ProximaNova-Regular.ttf */; };
-		D99D30CA27E0593A0023C90E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30C927E0593A0023C90E /* BaseViewController.swift */; };
 		D99D30D027E05AE70023C90E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30CF27E05AE70023C90E /* HomeView.swift */; };
 		D99D30D227E05CB20023C90E /* GradientDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99D30D127E05CB20023C90E /* GradientDirection.swift */; };
 		D99D312B27E086810023C90E /* CollectionViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D99D311B27E086810023C90E /* CollectionViewHeader.xib */; };
@@ -111,7 +110,6 @@
 		D99D30BC27E0548B0023C90E /* LocalizedKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizedKey.swift; sourceTree = "<group>"; };
 		D99D30BD27E0548B0023C90E /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D99D30BE27E0548B0023C90E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		D99D30C927E0593A0023C90E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D99D30CF27E05AE70023C90E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D99D30D127E05CB20023C90E /* GradientDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDirection.swift; sourceTree = "<group>"; };
 		D99D311B27E086810023C90E /* CollectionViewHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewHeader.xib; sourceTree = "<group>"; };
@@ -281,7 +279,6 @@
 			children = (
 				D902118127E20C14000E418D /* SleepScreen2 */,
 				D99D30CB27E0595B0023C90E /* Home */,
-				D99D30C827E0593A0023C90E /* Base */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,14 +318,6 @@
 				D99D30BE27E0548B0023C90E /* Colors.swift */,
 			);
 			path = Globals;
-			sourceTree = "<group>";
-		};
-		D99D30C827E0593A0023C90E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				D99D30C927E0593A0023C90E /* BaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		D99D30CB27E0595B0023C90E /* Home */ = {
@@ -672,7 +661,6 @@
 				D99D30B627E054640023C90E /* UICollectionReusableView.swift in Sources */,
 				D9603AB227DF1573006D4840 /* AppDelegate.swift in Sources */,
 				D9603AB427DF1573006D4840 /* SceneDelegate.swift in Sources */,
-				D99D30CA27E0593A0023C90E /* BaseViewController.swift in Sources */,
 				D99D30B327E054640023C90E /* UIFonts.swift in Sources */,
 				D902117A27E1AD0E000E418D /* WeekDaysModel.swift in Sources */,
 				D99D312C27E086810023C90E /* CollectionViewHeader.swift in Sources */,

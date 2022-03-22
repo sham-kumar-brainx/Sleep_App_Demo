@@ -5,7 +5,6 @@ class HomeView: UIView {
     // MARK: - Outlets
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
-    @IBOutlet weak var sideMenuButton: UIButton!
     @IBOutlet weak var notificationButton: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var availabilityStatusLabel: UILabel!

@@ -8,7 +8,7 @@ enum Section: Int, CaseIterable {
     case sleepCategories1
 }
 
-class HomeViewController: BaseViewController {
+class HomeViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet var homeView: HomeView!
