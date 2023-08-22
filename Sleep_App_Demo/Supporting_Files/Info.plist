@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FontsFree-Net-pr2.ttf</string>
+		<string>FontsFree-Net-Proxima-Nova-Bold.otf</string>
+		<string>FontsFree-Net-ProximaNova-Regular.ttf</string>
+	</array>
 </dict>
 </plist>
